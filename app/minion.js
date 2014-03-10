@@ -4,27 +4,24 @@ var Minion = function(x, y) {
 	this.dead = false;
 };
 
+// Move the minion
 Minion.prototype.move = function(x, y) {
-	this.pos.x += x;
-	this.pos.y += y;
+	
 };
 
+// Move the minion to a specific location
 Minion.prototype.moveTo = function(x, y) {
-	this.pos.x = x;
-	this.pos.y = y;
+	
 };
 
+// Apply damage to the minion
 Minion.prototype.applyDamage = function(amount) {
-	this.health -= amount;
-	if(this.health <= 0) {
-		this.health = 0;
-		this.dead = true;
-	}
+
 };
 
+// Resurrect the minion
 Minion.prototype.resurrect = function() {
-	this.health = 100;
-	this.dead = false;
+
 };
 
 module.exports = Minion;
