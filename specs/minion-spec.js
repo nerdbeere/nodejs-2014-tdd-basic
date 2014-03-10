@@ -28,6 +28,10 @@ describe('Minion', function() {
 		
 		minion.applyDamage(20);
 		expect(minion.health).toBe(0);
+		
+		minion.applyDamage(20);
+		expect(minion.health).toBe(0);
+		
 		expect(minion.dead).toBe(true);
 	});
 	
